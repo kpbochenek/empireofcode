@@ -21,6 +21,7 @@ sdist/
 var/
 *.egg-info/
 .installed.cfg
+.ropeproject
 *.egg
 
 # PyInstaller
