@@ -1,4 +1,5 @@
 #kpbochenek@gmail.com
+
 def median(data):
     data.sort()
     l = len(data)
@@ -16,5 +17,4 @@ if __name__ == '__main__':
     print("Start the long test")
     assert median(list(range(1000000))) == 499999.5, "Long."
     print("The local tests are done.")
-
     print("Earn cool rewards by using the 'Check' button!")

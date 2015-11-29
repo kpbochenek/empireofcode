@@ -3,11 +3,11 @@ def flatten(e):
         return flat_list(e)
     else:
         return [e]
-    
+
 
 def flat_list(array):
     return sum([flatten(x) for x in array], [])
-    
+
 
 if __name__ == "__main__":
     assert flat_list([1, 2, 3]) == [1, 2, 3], "Flat"
