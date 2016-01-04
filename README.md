@@ -6,7 +6,6 @@ www.empireofcode.com
 - Earth Distances
 - Counting Tiles
 - Three Point Circle
-- Crystal Lattice
 - Call Base
 - Mona Captcha
 - Clock Angle

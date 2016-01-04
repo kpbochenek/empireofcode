@@ -1,7 +1,21 @@
-# kpbochenek@gmail.com
-
 def clock_angle(time):
-    return 0
+    h, m = list(map(int, time.split(":")))
+
+    if h > 12: h = h - 12
+
+    h = h*30 + ((m/60)*30)
+    m = (m)/60*360
+    angle = abs(m - h)
+
+    if angle >  180: angle = 360 - angle
+    if angle == 0.0: return 0
+
+    s = str(format(angle, '.1f'))
+    if '.' in s:
+        return float(s)
+    else:
+        return int(s)
+
 
 if __name__ == '__main__':
     # These "asserts" using only for self-checking and not necessary for auto-testing
